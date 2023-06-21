@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script src="code.js" defer></script>
+    <script src="calc.js" defer></script>
+    <script src="//unpkg.com/alpinejs" defer></script>
+    <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
+
+    <style>
+        .container {
+
+            height: 10em;
+            width: auto;
+            text-align: center;
+        }
+
+        .hr{
+
+            width: auto;
+        }
+    </style>
+
+</head>
+
+<body class="container">
+
+    <br><br><br><br>
+<div>
+    <div x-data="{counter : 7}">
+        <h2>Incrementing and Decrementing Function using alphineJs</h2>
+
+
+        
+          <button x-on:click="counter++">Increment(+)</button>
+          <div x-text="counter"></div>
+          
+          <button x-on:click=" if (counter>0)counter--">Decrement(-)</button>
+
+      </div>
+
+</div>
+<hr><br><br><br><br>
+<div>
+
+    <h2>Incrementing and Decrementing Function using DOM</h2>
+
+
+       </div>
+
+        <button class="increment">Increment(+)</button>
+
+        <div class="theNumber">
+            0
+        </div>
+
+        <button class="decrement">Decrement(-)</button>
+    </div>
+</div>
+
+
+
+</body>
+
+
+</html>
